@@ -1,0 +1,85 @@
+:root {
+  --color1: #34568b;
+  --color2: #e9e9e9;
+  --color3: #cb8b5d;
+  --font1: tahoma;
+  --font2: sans-serif;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  text-align: middle;
+  text-size-adjust: none; /* Fix Android Big Text */
+  text-rendering: optimizeLegibility; /* Improve text */
+  margin-bottom: 14px; /* Some Android screens cover bottom viewport */
+  font-size: 44px;
+  color: #333;
+  font-family: var(--font1);
+  line-height: 1.6em;
+}
+
+/* Header.js */
+
+header {
+  width: 5em;
+  margin: 0 auto;
+}
+
+header > h1 { /* title */
+  
+}
+
+
+/* News.js Component */
+
+.news { /* section */
+  color: #000;
+  width: 100%;
+  padding-right: 1em;
+  padding-left: 1em;
+  margin: 0 auto;
+}
+
+.news > .newsArticles { /* article */
+
+}
+
+.news > .newsArticles > h3 { /* title */
+  font-weight: 700;
+  color: #33d;
+}
+
+.news > .newsArticles > p { /* short description */
+  font-size: 42px; 
+}
+
+.news > .newsArticles > img {
+  display: block;
+
+}
+
+.news .newsArticles > .publishedDate {
+  display: block;
+  font-size: 36px;
+}
+
+.news .newsArticle { /* Article */
+
+}
+
+/*
+return html`<section class="news">
+    <article class="newsArticles">
+      <h3>${props.title}</h3>
+      <p>${props.shortDescription}</p>
+      ${props?.mainImage?.src?.length && html`<img src="${props.mainImage.src}" alt="${props.mainImage.alt}" />`}
+      <span class="publishedDate">${props.publishedDate}</span>
+      <div class="newsArticle">
+      ${props.article}
+      </div>
+    </article>
+  </section>`;
+}
+*/
