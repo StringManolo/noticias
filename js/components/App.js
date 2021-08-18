@@ -11,12 +11,16 @@ import Footer from "./Footer.js";
 const App = props => {
 
   return html`
-    <${Header} title="News" />
-    <${Router} onChange="${ e => this.setState(e)}" >
-      <${Dummy} path="/" />
-      <${Dummy2} path="/dummy2" />
-    <//>
-    <${Footer} title="${'© ' + new Date().getFullYear()}" />
+      <${Header} title="News" />
+      <${Router} onChange="${ e => this.setState(e)}" >
+        <${Dummy} path="/" />
+        <${Dummy2} path="/dummy2" />
+      <//>
+      <nav>
+        <a href="/">Home</a>
+	<a href="/dummy2">Dummy2</a>
+      </nav>
+      <${Footer} title="${'© ' + new Date().getFullYear()}" />
   `;
   
 }
