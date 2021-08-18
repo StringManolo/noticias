@@ -1,4 +1,4 @@
-import { html } from "../htm-preact.mjs";
+import { html } from "../htm-preact-router/htm-preact-router.mjs";
 
 const Header = props => {
   return html`

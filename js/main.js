@@ -1,4 +1,4 @@
-import { html, render } from "./htm-preact.mjs";
+import { html, render } from "./htm-preact-router/htm-preact-router.mjs";
 
 import App from "./components/App.js";
 
